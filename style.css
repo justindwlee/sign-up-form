@@ -1,5 +1,81 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(./Norse-Bold.otf) format('opentype');
+}
+
 body {
-    background-image: url("./img/road.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
+    display: flex;
+}
+
+.title-section {
+    width: 38%;
+    height: 100vh;
+    background-image: url('./img/road.jpg');
+    z-index:-2;
+    position: relative;
+}
+
+
+.title {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.title-logo {
+    width: 100px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.title-text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Norse Bold', sans-serif;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 63px;
+    opacity: 0.8;
+}
+
+.copyright > a {
+    color: white;
+}
+
+.content-section {
+    width: 62%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.content-section__top {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.sign-up-form {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
 }
