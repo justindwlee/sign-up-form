@@ -4,6 +4,6 @@ The Odin Project: Sign-up Form Project
 
 Thanks to the creator of the image:
 
-- Larisa-K: https://pixabay.com/ko/users/larisa-k-1107275/
+- 6563351: https://pixabay.com/ko/users/6563351-6563351/
 
 - Victoria_Regen: https://pixabay.com/ko/users/victoria_regen-6314823/

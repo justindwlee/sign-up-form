@@ -1,12 +1,14 @@
 const password = document.querySelector('#pwd');
 const confirmPassword = document.querySelector('#pwd-confirm')
 const errorMsg = document.querySelector('.error-msg-password');
+
 function checkPasswordMatch() {
     if (password.value == '' && confirmPassword.value == '') {
         errorMsg.textContent = "*please fill out this field";
         errorMsg.style.color = "red";
     }
     else if (password.value == confirmPassword.value) {
+        errorMsg.textContent = "";
         errorMsg.textContent = "password confirmed!";
         errorMsg.style.color = "green";
         password.style.borderColor = 'green';

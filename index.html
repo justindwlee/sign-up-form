@@ -8,73 +8,71 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="title-section">
-        <div class="title">
-            <div class="background"></div>
-            <img class="title-logo" src="./img/fox.jpg" alt="Cute Fox Logo">
-            <div class="title-text">Red Foxy</div>
+    <div class="container">
+        <div class="title-section">
+            <div class="title">
+                <div class="background"></div>
+                <img class="title-logo" src="./img/fox.jpg" alt="Cute Fox Logo">
+                <div class="title-text">Red Foxy</div>
+            </div>
+            <div class="copyright">
+                Photo by <span><a href="https://pixabay.com/ko/users/6563351-6563351/">6563351</a></span> on <span><a href="https://pixabay.com/ko">Pixabay</a></span>
+            </div>
         </div>
-        <div class="copyright">
-            Photo by <span><a href="https://pixabay.com/ko/users/larisa-k-1107275/">Larisa-K</a></span> on <span><a href="https://pixabay.com/ko">Pixabay</a></span>
-        </div>
-    </div>
-
-    <div class="content-section">
-        <div class="content-section__header">
-            <p>Foxes are fluffy. Foxes are lovely. And for the most important part, they are <span>CUTE</span>.
-                Do you like foxes too? Sign up to our form and get tons of information about cute foxy.
-            </p>
-            <p>Sign up to start now!</p>
-        </div>
-
-        <div class="sign-up-form">
-            <form action="get">
-                <div class="input-section">
-                    <h2>Let's Do This!</h2>
-                    <div class="form-row">
-                        <div class="first-name-section form-cell">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" required/>
-                            <span class="error-msg">*please fill out this field</span>
+        <div class="content-section">
+            <div class="content-section__header">
+                <p>Foxes are fluffy. Foxes are lovely. And for the most important part, they are <span>CUTE</span>.
+                    Do you like foxes too? Sign up to our form and get tons of information about cute foxy.
+                </p>
+                <p>Sign up to start now!</p>
+            </div>
+            <div class="sign-up-form">
+                <form action="get">
+                    <div class="input-section">
+                        <h2>Let's Do This!</h2>
+                        <div class="form-row">
+                            <div class="first-name-section form-cell">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name" required/>
+                                <span class="error-msg">*please fill out this field</span>
+                            </div>
+                            <div class="last-name-section form-cell">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name" />
+                            </div>
                         </div>
-                        <div class="last-name-section form-cell">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" />
+                        <div class="form-row">
+                            <div class="email-section form-cell">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email"/>
+                                <span class="error-msg">*please write an email in valid form</span>
+                            </div>
+                            <div class="phone-section form-cell">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="text" id="phone" name="phone-num" placeholder="01012345678"pattern="\d{11}"/>
+                                <span class="error-msg">*11 digit phone number needed</span>
+                            </div>
                         </div>
+                        <div class="form-row">
+                            <div class="password-section form-cell">
+                                <label for="pwd">PASSWORD</label>
+                                <input type="password" id="pwd" name="pwd" required/>
+                                <span class="error-msg-password"></span>
+                            </div>
+                            <div class="confirm-password-section form-cell">
+                                <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
+                            </div>
+                        </div>
+        
                     </div>
-                    <div class="form-row">
-                        <div class="email-section form-cell">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email"/>
-                            <span class="error-msg">*please write an email in valid form</span>
-                        </div>
-                        <div class="phone-section form-cell">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="text" id="phone" name="phone-num" placeholder="01012345678"pattern="\d{11}"/>
-                            <span class="error-msg">*11 digit phone number needed</span>
-                        </div>
+                    <div class="submit-section">
+                        <button class="submit-btn" type="submit">Create Account</button>
+                        <p>Already have an account? <span>Log in</span></p>
                     </div>
-                    <div class="form-row">
-                        <div class="password-section form-cell">
-                            <label for="pwd">PASSWORD</label>
-                            <input type="password" id="pwd" name="pwd" required/>
-                            <span class="error-msg-password"></span>
-                        </div>
-                        <div class="confirm-password-section form-cell">
-                            <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="pwd-confirm" name="pwd-confirm" required/>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="submit-section">
-                    <button class="submit-btn" type="submit">Create Account</button>
-                    <p>Already have an account? <span>Log in</span></p>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-
-
     </div>
 </body>
 </html>
